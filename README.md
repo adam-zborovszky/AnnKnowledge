@@ -11,7 +11,7 @@ Claude Code with a sub-agent pattern.
 | `01_BOOK_STRUCTURE.md` | Full table of contents and taxonomy (24 chapters, 6 parts) |
 | `02_GUIDELINES.md` | Style rules, terminology table, analogy bank, chapter template |
 | `03_PIPELINE.md` | Detailed pipeline plan with context clear points |
-| `orchestrator.py` | The orchestrator script that executes everything |
+| `orchestrator.sh` | The orchestrator script that executes everything (pure bash, no Python) |
 | `README.md` | This file |
 
 ## Quick Start
@@ -27,20 +27,23 @@ Copy all 5 files into an empty directory.
 
 ### 3. Run
 ```bash
+# Make executable
+chmod +x orchestrator.sh
+
 # Full run (start to finish, ~60-90 min)
-python orchestrator.py
+./orchestrator.sh
 
 # Dry run (only prints what it would do)
-python orchestrator.py --dry-run
+./orchestrator.sh --dry-run
 
 # Resume after interruption
-python orchestrator.py --resume
+./orchestrator.sh --resume
 
 # Start from a specific phase
-python orchestrator.py --phase 3
+./orchestrator.sh --phase 3
 
 # Start from a specific step within a phase
-python orchestrator.py --phase 4 --step 5
+./orchestrator.sh --phase 4 --step 5
 ```
 
 ### 4. Result
@@ -80,7 +83,7 @@ The system handles the finite context window by:
 → `npm install -g @anthropic-ai/claude-code`
 
 **Stuck at a phase**
-→ `python orchestrator.py --resume` (continues from last checkpoint)
+→ `./orchestrator.sh --resume` (continues from last checkpoint)
 
 **A chapter is too short**
 → Delete the file from `chapters/` and re-run with `--resume`
