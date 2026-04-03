@@ -102,13 +102,13 @@ Save the result to: ${output_file}
     while [[ $attempt -le $MAX_RETRIES ]]; do
         log "  Claude call (attempt $((attempt+1))/$((MAX_RETRIES+1)))..."
 
-        # Write prompt to temp file to avoid shell escaping issues
+        # Write prompt to temp file, pipe it to claude to avoid ARG_MAX limit
         local tmp_prompt
         tmp_prompt=$(mktemp)
-        echo "$full_prompt" > "$tmp_prompt"
+        printf '%s' "$full_prompt" > "$tmp_prompt"
 
         local result=0
-        claude -p "$(cat "$tmp_prompt")" > "${output_file}.tmp" 2>/dev/null || result=$?
+        cat "$tmp_prompt" | claude -p > "${output_file}.tmp" 2>"${output_file}.err" || result=$?
 
         rm -f "$tmp_prompt"
 
@@ -116,21 +116,24 @@ Save the result to: ${output_file}
             # Check if Claude wrote directly to output_file
             if file_ok "$output_file"; then
                 log "  ✓ Success: $output_file"
-                rm -f "${output_file}.tmp"
+                rm -f "${output_file}.tmp" "${output_file}.err"
                 return 0
             # Otherwise use stdout capture
             elif [[ -f "${output_file}.tmp" ]] && [[ $(wc -c < "${output_file}.tmp") -gt 200 ]]; then
                 mv "${output_file}.tmp" "$output_file"
                 log "  ✓ Success (from stdout): $output_file"
+                rm -f "${output_file}.err"
                 return 0
             else
                 log "  ✗ Output file empty or not created"
             fi
         else
-            log "  ✗ Error (exit code $result)"
+            local errmsg=""
+            [[ -f "${output_file}.err" ]] && errmsg=$(head -c 300 "${output_file}.err")
+            log "  ✗ Error (exit code $result): $errmsg"
         fi
 
-        rm -f "${output_file}.tmp"
+        rm -f "${output_file}.tmp" "${output_file}.err"
         attempt=$((attempt + 1))
 
         if [[ $attempt -le $MAX_RETRIES ]]; then
