@@ -1,0 +1,209 @@
+[2026-04-03 22:13:09] ============================================================
+[2026-04-03 22:13:09] DEEP LEARNING BOOK — GENERATION STARTING
+[2026-04-03 22:13:09] Start phase: 1, Start step: 1
+[2026-04-03 22:13:09] ============================================================
+[2026-04-03 22:13:09] ============================================================
+[2026-04-03 22:13:09] PHASE 1: RESEARCH
+[2026-04-03 22:13:09] ============================================================
+[2026-04-03 22:13:09]   Step 1.1: 01_foundations
+[2026-04-03 22:13:09]   Claude call (attempt 1/3)...
+[2026-04-03 22:13:10]   ✗ Error (exit code 1)
+[2026-04-03 22:13:10]   Waiting 5s...
+[2026-04-03 22:13:15]   Claude call (attempt 2/3)...
+[2026-04-03 22:13:16]   ✗ Error (exit code 1)
+[2026-04-03 22:13:16]   Waiting 15s...
+[2026-04-03 22:13:31]   Claude call (attempt 3/3)...
+[2026-04-03 22:13:32]   ✗ Error (exit code 1)
+[2026-04-03 22:13:32]   ✗✗✗ FAILED after 3 attempts: research_notes/01_foundations.md
+[2026-04-03 22:13:32]   !!! Phase 1 stuck at step 1. Re-run: --phase 1 --step 1
+[2026-04-03 22:18:49] ============================================================
+[2026-04-03 22:18:49] DEEP LEARNING BOOK — GENERATION STARTING
+[2026-04-03 22:18:49] Start phase: 1, Start step: 1
+[2026-04-03 22:18:49] ============================================================
+[2026-04-03 22:18:49] ============================================================
+[2026-04-03 22:18:49] PHASE 1: RESEARCH
+[2026-04-03 22:18:49] ============================================================
+[2026-04-03 22:18:49]   Step 1.1: 01_foundations
+[2026-04-03 22:18:49]   Claude call (attempt 1/3)...
+[2026-04-03 22:31:36]   ✓ Success (from stdout): research_notes/01_foundations.md
+[2026-04-03 22:31:36]   Step 1.2: 02_cnn_rnn
+[2026-04-03 22:31:36]   Claude call (attempt 1/3)...
+[2026-04-03 22:46:23]   ✓ Success (from stdout): research_notes/02_cnn_rnn.md
+[2026-04-03 22:46:23]   Step 1.3: 03_transformer_tcn
+[2026-04-03 22:46:23]   Claude call (attempt 1/3)...
+[2026-04-03 22:59:49]   ✓ Success (from stdout): research_notes/03_transformer_tcn.md
+[2026-04-03 22:59:49]   Step 1.4: 04_generative
+[2026-04-03 22:59:49]   Claude call (attempt 1/3)...
+[2026-04-03 23:12:37]   ✓ Success (from stdout): research_notes/04_generative.md
+[2026-04-03 23:12:37]   Step 1.5: 05_specialized
+[2026-04-03 23:12:37]   Claude call (attempt 1/3)...
+[2026-04-03 23:32:12]   ✓ Success (from stdout): research_notes/05_specialized.md
+[2026-04-03 23:32:12]   Step 1.6: 06_trends
+[2026-04-03 23:32:12]   Claude call (attempt 1/3)...
+[2026-04-03 23:38:28]   ✓ Success (from stdout): research_notes/06_trends.md
+[2026-04-03 23:38:28] PHASE 1 DONE ✓
+[2026-04-03 23:38:28] 
+[2026-04-03 23:38:28] --- CONTEXT CLEAR (Phase 1 → 2) ---
+[2026-04-03 23:38:28] 
+[2026-04-03 23:38:28] ============================================================
+[2026-04-03 23:38:28] PHASE 2: CONDENSATION
+[2026-04-03 23:38:28] ============================================================
+[2026-04-03 23:38:28]   Step 2.1: Condensing: 01_foundations.md
+[2026-04-03 23:38:28]   Claude call (attempt 1/3)...
+[2026-04-03 23:38:53]   ✓ Success (from stdout): condensed/01_foundations_condensed.md
+[2026-04-03 23:38:53]   Step 2.2: Condensing: 02_cnn_rnn.md
+[2026-04-03 23:38:53]   Claude call (attempt 1/3)...
+[2026-04-03 23:39:05]   ✓ Success (from stdout): condensed/02_cnn_rnn_condensed.md
+[2026-04-03 23:39:05]   Step 2.3: Condensing: 03_transformer_tcn.md
+[2026-04-03 23:39:05]   Claude call (attempt 1/3)...
+[2026-04-03 23:39:16]   ✓ Success (from stdout): condensed/03_transformer_tcn_condensed.md
+[2026-04-03 23:39:16]   Step 2.4: Condensing: 04_generative.md
+[2026-04-03 23:39:16]   Claude call (attempt 1/3)...
+[2026-04-03 23:39:35]   ✓ Success (from stdout): condensed/04_generative_condensed.md
+[2026-04-03 23:39:35]   Step 2.5: Condensing: 05_specialized.md
+[2026-04-03 23:39:35]   Claude call (attempt 1/3)...
+[2026-04-03 23:40:17]   ✓ Success (from stdout): condensed/05_specialized_condensed.md
+[2026-04-03 23:40:17]   Step 2.6: Condensing: 06_trends.md
+[2026-04-03 23:40:17]   Claude call (attempt 1/3)...
+[2026-04-03 23:40:29]   ✓ Success (from stdout): condensed/06_trends_condensed.md
+[2026-04-03 23:40:29] PHASE 2 DONE ✓
+[2026-04-03 23:40:29] 
+[2026-04-03 23:40:29] --- CONTEXT CLEAR (Phase 2 → 3) ---
+[2026-04-03 23:40:29] 
+[2026-04-03 23:40:29] ============================================================
+[2026-04-03 23:40:29] PHASE 3: OUTLINE CREATION
+[2026-04-03 23:40:29] ============================================================
+[2026-04-03 23:40:29]   Claude call (attempt 1/3)...
+[2026-04-03 23:59:58]   ✓ Success (from stdout): outline/book_outline.md
+[2026-04-03 23:59:58] PHASE 3 DONE ✓
+[2026-04-03 23:59:58] 
+[2026-04-03 23:59:58] --- CONTEXT CLEAR (Phase 3 → 4) ---
+[2026-04-03 23:59:58] 
+[2026-04-03 23:59:58] ============================================================
+[2026-04-03 23:59:58] PHASE 4: WRITING CHAPTERS
+[2026-04-03 23:59:58] ============================================================
+[2026-04-03 23:59:58]   Step 4.1: Writing: Chapter 1: The Neuron
+[2026-04-03 23:59:58]   Claude call (attempt 1/3)...
+[2026-04-04 00:01:41]   ✓ Success (from stdout): chapters/01_neuron.md
+[2026-04-04 00:01:41]   Step 4.2: Writing: Chapter 2: Networks
+[2026-04-04 00:01:41]   Claude call (attempt 1/3)...
+[2026-04-04 00:04:33]   ✓ Success (from stdout): chapters/02_networks.md
+[2026-04-04 00:04:33]   Step 4.3: Writing: Chapter 3: How Does a Network Learn?
+[2026-04-04 00:04:33]   Claude call (attempt 1/3)...
+[2026-04-04 00:06:36]   ✓ Success (from stdout): chapters/03_learning.md
+[2026-04-04 00:06:36]   Step 4.4: Writing: Chapter 4: Problems of Learning and Their Solutions
+[2026-04-04 00:06:36]   Claude call (attempt 1/3)...
+[2026-04-04 00:10:15]   ✓ Success (from stdout): chapters/04_problems.md
+[2026-04-04 00:10:15]   Step 4.5: Writing: Chapter 5: CNN
+[2026-04-04 00:10:15]   Claude call (attempt 1/3)...
+[2026-04-04 00:13:26]   ✓ Success (from stdout): chapters/05_cnn.md
+[2026-04-04 00:13:26]   Step 4.6: Writing: Chapter 6: RNN
+[2026-04-04 00:13:26]   Claude call (attempt 1/3)...
+[2026-04-04 00:15:32]   ✓ Success (from stdout): chapters/06_rnn.md
+[2026-04-04 00:15:32]   Step 4.7: Writing: Chapter 7: Attention and Transformer
+[2026-04-04 00:15:32]   Claude call (attempt 1/3)...
+[2026-04-04 00:22:21]   ✓ Success (from stdout): chapters/07_transformer.md
+[2026-04-04 00:22:21]   Step 4.8: Writing: Chapter 8: TCN
+[2026-04-04 00:22:21]   Claude call (attempt 1/3)...
+[2026-04-04 00:25:29]   ✓ Success (from stdout): chapters/08_tcn.md
+[2026-04-04 00:25:29]   Step 4.9: Writing: Chapter 9: Autoencoder
+[2026-04-04 00:25:29]   Claude call (attempt 1/3)...
+[2026-04-04 00:29:51]   ✓ Success (from stdout): chapters/09_autoencoder.md
+[2026-04-04 00:29:51]   Step 4.10: Writing: Chapter 10: VAE
+[2026-04-04 00:29:51]   Claude call (attempt 1/3)...
+[2026-04-04 00:33:11]   ✓ Success (from stdout): chapters/10_vae.md
+[2026-04-04 00:33:11]   Step 4.11: Writing: Chapter 11: GAN
+[2026-04-04 00:33:11]   Claude call (attempt 1/3)...
+[2026-04-04 00:37:08]   ✓ Success (from stdout): chapters/11_gan.md
+[2026-04-04 00:37:08]   Step 4.12: Writing: Chapter 12: Diffusion Models
+[2026-04-04 00:37:08]   Claude call (attempt 1/3)...
+[2026-04-04 00:41:59]   ✓ Success (from stdout): chapters/12_diffusion.md
+[2026-04-04 00:41:59]   Step 4.13: Writing: Chapter 13: Normalizing Flows
+[2026-04-04 00:41:59]   Claude call (attempt 1/3)...
+[2026-04-04 00:45:13]   ✓ Success (from stdout): chapters/13_flows.md
+[2026-04-04 00:45:13]   Step 4.14: Writing: Chapters 14-17: GNN, SSM/Mamba, Capsule Networks, KAN
+[2026-04-04 00:45:13]   Claude call (attempt 1/3)...
+[2026-04-04 00:56:52]   ✓ Success (from stdout): chapters/14_17_specialized.md
+[2026-04-04 00:56:52]   Step 4.15: Writing: Chapters 18-21: Transfer Learning, Self-Supervised, Deep RL, Federated
+[2026-04-04 00:56:52]   Claude call (attempt 1/3)...
+[2026-04-04 01:05:10]   ✓ Success (from stdout): chapters/18_21_paradigms.md
+[2026-04-04 01:05:10]   Step 4.16: Writing: Chapters 22-24: Multimodal, Family Tree, Future + Appendices
+[2026-04-04 01:05:10]   Claude call (attempt 1/3)...
+[2026-04-04 01:17:03]   ✓ Success (from stdout): chapters/22_24_trends.md
+[2026-04-04 01:17:03] PHASE 4 DONE ✓
+[2026-04-04 01:17:03] 
+[2026-04-04 01:17:03] --- CONTEXT CLEAR (Phase 4 → 5) ---
+[2026-04-04 01:17:03] 
+[2026-04-04 01:17:03] ============================================================
+[2026-04-04 01:17:03] PHASE 5: REVIEW & ASSEMBLY
+[2026-04-04 01:17:03] ============================================================
+[2026-04-04 01:17:03]   Step 5.1: Review: part1.md
+[2026-04-04 01:17:03]   Claude call (attempt 1/3)...
+[2026-04-04 01:17:34]   ✓ Success (from stdout): chapters_reviewed/part1.md
+[2026-04-04 01:17:34]   Step 5.2: Review: part2.md
+[2026-04-04 01:17:34]   Claude call (attempt 1/3)...
+[2026-04-04 01:38:12]   ✗ Error (exit code 1): 
+[2026-04-04 01:38:12]   Waiting 5s...
+[2026-04-04 01:38:17]   Claude call (attempt 2/3)...
+[2026-04-04 01:38:20]   ✗ Error (exit code 1): 
+[2026-04-04 01:38:20]   Waiting 15s...
+[2026-04-04 01:38:35]   Claude call (attempt 3/3)...
+[2026-04-04 01:38:38]   ✗ Error (exit code 1): 
+[2026-04-04 01:38:38]   ✗✗✗ FAILED after 3 attempts: chapters_reviewed/part2.md
+[2026-04-04 05:19:50] Resuming: Phase 5, Step 2
+[2026-04-04 05:19:50] ============================================================
+[2026-04-04 05:19:50] DEEP LEARNING BOOK — GENERATION STARTING
+[2026-04-04 05:19:50] Start phase: 5, Start step: 2
+[2026-04-04 05:19:50] ============================================================
+[2026-04-04 05:19:50] ============================================================
+[2026-04-04 05:19:50] PHASE 5: REVIEW & ASSEMBLY
+[2026-04-04 05:19:50] ============================================================
+[2026-04-04 05:19:50]   Step 5.2: Review: part2.md
+[2026-04-04 05:19:50]   Claude call (attempt 1/3)...
+[2026-04-04 05:35:44]   ✓ Success (from stdout): chapters_reviewed/part2.md
+[2026-04-04 05:35:44]   Step 5.3: Review: part3.md
+[2026-04-04 05:35:44]   Claude call (attempt 1/3)...
+[2026-04-04 05:52:10]   ✓ Success (from stdout): chapters_reviewed/part3.md
+[2026-04-04 05:52:10]   Step 5.4: Review: part4.md
+[2026-04-04 05:52:10]   Claude call (attempt 1/3)...
+[2026-04-04 06:14:17]   ✓ Success (from stdout): chapters_reviewed/part4.md
+[2026-04-04 06:14:17]   Step 5.5: Review: part5.md
+[2026-04-04 06:14:17]   Claude call (attempt 1/3)...
+[2026-04-04 06:19:43]   ✓ Success (from stdout): chapters_reviewed/part5.md
+[2026-04-04 06:19:43]   Final assembly...
+[2026-04-04 06:19:43]   Claude call (attempt 1/3)...
+[2026-04-04 07:07:24]   ✗ Error (exit code 1): 
+[2026-04-04 07:07:24]   Waiting 5s...
+[2026-04-04 07:07:29]   Claude call (attempt 2/3)...
+[2026-04-04 07:07:32]   ✗ Error (exit code 1): 
+[2026-04-04 07:07:32]   Waiting 15s...
+[2026-04-04 07:07:47]   Claude call (attempt 3/3)...
+[2026-04-04 07:07:50]   ✗ Error (exit code 1): 
+[2026-04-04 07:07:50]   ✗✗✗ FAILED after 3 attempts: output/deep_learning_book.md
+[2026-04-04 07:07:50]   Fallback: simple concatenation...
+[2026-04-04 07:07:50] PHASE 5 DONE ✓
+[2026-04-04 07:07:50] 
+[2026-04-04 07:07:50] --- CONTEXT CLEAR (Phase 5 → 6) ---
+[2026-04-04 07:07:50] 
+[2026-04-04 07:07:50] ============================================================
+[2026-04-04 07:07:50] BOOK GENERATION COMPLETE ✓
+[2026-04-04 07:07:50] Result: output/deep_learning_book.md
+[2026-04-04 07:07:50] ============================================================
+[2026-04-04 10:37:27] Resuming: Phase 5, Step 6
+[2026-04-04 10:37:27] ============================================================
+[2026-04-04 10:37:27] DEEP LEARNING BOOK — GENERATION STARTING
+[2026-04-04 10:37:27] Start phase: 5, Start step: 6
+[2026-04-04 10:37:27] ============================================================
+[2026-04-04 10:37:27] ============================================================
+[2026-04-04 10:37:27] PHASE 5: REVIEW & ASSEMBLY
+[2026-04-04 10:37:27] ============================================================
+[2026-04-04 10:37:27]   Final assembly...
+[2026-04-04 10:37:27]   ALREADY DONE (final)
+[2026-04-04 10:37:27] PHASE 5 DONE ✓
+[2026-04-04 10:37:27] 
+[2026-04-04 10:37:27] --- CONTEXT CLEAR (Phase 5 → 6) ---
+[2026-04-04 10:37:27] 
+[2026-04-04 10:37:27] ============================================================
+[2026-04-04 10:37:27] BOOK GENERATION COMPLETE ✓
+[2026-04-04 10:37:27] Result: output/deep_learning_book.md
+[2026-04-04 10:37:27] ============================================================
